@@ -41,3 +41,6 @@
 (setq mouse-wheel-scroll-amount '(0.07))
 (setq mouse-wheel-progressive-speed nil)
 (setq ring-bell-function 'ignore)
+
+;; syntax highlighting
+(setq font-lock-maximum-decoration t)
