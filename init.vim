@@ -6,6 +6,7 @@
 :set smarttab
 :set softtabstop=4
 :set mouse=a
+:set shell=C:/ProgramData/chocolatey/bin/nu.exe
 
 call plug#begin()
 
