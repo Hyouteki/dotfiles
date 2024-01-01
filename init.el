@@ -61,3 +61,6 @@
 (setq indo-enable-flex-matching t)
 (setq ido-everywhere t)
 (ido-mode 1)
+
+(setq resize-mini-windows  t)
+
