@@ -50,7 +50,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(rust-mode zenburn-theme use-package)))
+ '(package-selected-packages '(smex rust-mode zenburn-theme use-package))
+ '(resize-mini-windows 'grow-only))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -63,8 +64,13 @@
 (setq ido-everywhere t)
 (ido-mode 1)
 
+;; smex: for minibuffer completions 
+(use-package smex
+ :bind (("M-x" . smex))
+ :config (smex-initialize))
+
 ;; resizing minibuffer
-(setq resize-mini-windows  t)
+(setq resize-mini-windows t)
 
 ;; write backups to ~/.emacs.d/backup/
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
